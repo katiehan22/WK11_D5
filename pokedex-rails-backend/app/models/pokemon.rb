@@ -42,5 +42,14 @@ class Pokemon < ApplicationRecord
 
     validates :poke_type, inclusion: {in: TYPES, message: "'%{value}' is not a valid Pokemon type" }
 
-    
+    has_many :items,
+      dependent: :destroy 
+
+    has_many :poke_moves,
+      dependent: :destroy,
+      inverse_of: :pokemon
+
+    has_many :moves,
+      through: :poke_moves,
+      source: :move 
 end
