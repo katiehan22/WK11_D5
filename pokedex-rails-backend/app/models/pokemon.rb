@@ -15,7 +15,7 @@
 #
 class Pokemon < ApplicationRecord
     validates :number, :name, :attack, :defense, :poke_type, :image_url, presence: true
-    validates :captured, inclusion: [true, false]
+    validates :captured, inclusion: {in: [true, false], message: "must be true or false"}
     validates :name, uniqueness: {message: "'%{value}' is not unique"}, length: {in: 3..255}
     validates :number, uniqueness: {message: "'%{value}' is not unique"}
     validates :attack, :defense, numericality: {in: 0..100}
