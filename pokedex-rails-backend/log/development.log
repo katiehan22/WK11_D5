@@ -8448,3 +8448,191 @@ FOREIGN KEY ("move_id")
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
   [1m[36mPokeMove Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "poke_moves" WHERE "poke_moves"."pokemon_id" = $1 AND "poke_moves"."move_id" = $2 LIMIT $3[0m  [["pokemon_id", 1], ["move_id", 1], ["LIMIT", 1]]
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-10-21 16:18:21 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:18:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:18:28 -0700
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:20:23 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:23:38 -0700
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-10-21 16:30:24 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:30:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by Api::PokemonController#index as */*
+  Parameters: {"default"=>{"format"=>:json}}
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1140)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:30:57 -0700
+Processing by Api::PokemonController#index as */*
+  Parameters: {"default"=>{"format"=>:json}}
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 125)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:31:43 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:31:44 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:31:51 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:32:25 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:32:27 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:32:43 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:32:45 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:33:00 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:33:00 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:33:02 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:33:20 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:33:36 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:33:36 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:33:41 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:33:58 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:34:00 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:35:51 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:35:53 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:36:01 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:36:02 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:39:13 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:39:14 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:39:16 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:44:49 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:46:33 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:46:35 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:46:36 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:49:11 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:49:13 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:49:59 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 16:50:00 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:51:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:52:04 -0700
+Processing by Api::PokemonController#index as */*
+  Parameters: {"default"=>{"format"=>:json}}
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 262)
+
+
+Started GET "/api/pokemon/types" for ::1 at 2022-10-21 16:53:48 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 16:57:33 -0700
+Processing by Api::PokemonController#index as */*
+  Parameters: {"default"=>{"format"=>:json}}
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 17:02:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 17:02:01 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2022-10-21 17:02:27 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::PokemonController:
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2022-10-21 17:02:28 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::PokemonController:
+

@@ -1,31 +1,14 @@
 class Api::PokemonController < ApplicationController
     def types 
-        @types = [
-            'fire',
-            'electric',
-            'normal',
-            'ghost',
-            'psychic',
-            'water',
-            'bug',
-            'dragon',
-            'grass',
-            'fighting',
-            'ice',
-            'flying',
-            'poison',
-            'ground',
-            'rock',
-            'steel'
-        ]
+        @types = Pokemon::TYPES
         render json: @types
     end
 
-    def index
+    # def index
+    #     debugger
+    # end
 
-    end
+    # def show
 
-    def show
-
-    end
+    # end
 end

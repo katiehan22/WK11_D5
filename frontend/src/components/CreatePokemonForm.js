@@ -75,6 +75,7 @@ const CreatePokemonForm = ({ hideForm }) => {
     hideForm();
   };
 
+  console.log(pokeTypes);
   return (
     <section className="new-form-holder centered middled">
       <ErrorMessage message={errorMessages.overall} />
@@ -129,8 +130,7 @@ const CreatePokemonForm = ({ hideForm }) => {
           onChange={updateMove2} />
         <ErrorMessage label={"Moves"} message={errorMessages.moves} />
         <select onChange={updateType} value={type}>
-          {pokeTypes.map(type =>
-            <option key={type}>{type}</option>
+          {pokeTypes.map(type => <option key={type}>{type}</option>
           )}
         </select>
         <ErrorMessage label={"Type"} message={errorMessages.type} />

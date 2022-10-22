@@ -31,7 +31,7 @@ export const getPokemon = () => async dispatch => {
 
 export const getPokemonTypes = () => async dispatch => {
   const response = await fetch(`/api/pokemon/types`);
-
+  debugger
   if (response.ok) {
     const types = await response.json();
     dispatch(loadTypes(types));
